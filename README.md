@@ -11,10 +11,9 @@ Setup a new OSX with my favourite settings and applications.
 - Turning off cmd + space for mac search
 - Adding sidebare to be really small and on the side
 - Idk, whatever else I run into while doing my initial setup
+- Make sure to show hidden files
 
 # TODO
-- Add custom .zshrc file
-- Install custom .zshrc file
 - Have so every tenth terminal that opens has a quote from cowsay and fortune
 - Update vscode settings and extensions
 - Setup CMD+Space to launch alfred if possible by code

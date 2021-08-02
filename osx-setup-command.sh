@@ -21,22 +21,29 @@ fi
 ### --- Utilities ---
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew update
-brew install git
-brew install java
+brew install \
+    git \
+    gradle \
+    maven 
+
 brew install --cask \
     alfred \
     cheatsheet \
     grammarly \
-    rectangle
+    rectangle \
+    java \
+    gradle \
+    maven
 
 ### --- Terminal Customisation ---
 brew install --cask iterm2
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 brew install \
-    cowsay \ 
-    fortune
+    cowsay \
+    fortune \
     autojump \
-    awscli
+    awscli \
+    thefuck
 
 ### --- Applications ---
 brew install --cask \
@@ -71,6 +78,7 @@ mas lucky trello
 ### --- MISC ---
 # Use this folder for all new projects
 mkdir ~/dev
+cp .zshrc ~/.zshrc
 
 # Delete this directory once setup is complete
 rm -rf -- "$(pwd -P)" && cd ..
