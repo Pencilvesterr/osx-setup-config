@@ -24,7 +24,8 @@ brew update
 brew install \
     git \
     gradle \
-    maven 
+    maven \
+    python 
 
 brew install --cask \
     alfred \

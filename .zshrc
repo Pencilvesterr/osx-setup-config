@@ -17,8 +17,12 @@ source $ZSH/oh-my-zsh.sh
 # Hmm, still deciding if this is a go?
 # export EDITOR="vi"
 
+# Have python from brew point to the correct interpreter 
+alias python=/usr/local/bin/python3 
+alias pip=/usr/local/bin/pip3
+
 # -------------------------------------------------------------------
-# Aliases
+# Alias Commands
 # -------------------------------------------------------------------
 alias del='echo Moving to ~/.Trash/ ...; mv -i $* ~/.Trash/'
 alias cdf='eval `osascript /Applications/Utilities/OpenTerminal.app/Contents/Resources/Scripts/OpenTerminal.scpt`'
