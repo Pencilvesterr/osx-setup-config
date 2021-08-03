@@ -25,14 +25,14 @@ brew install \
     git \
     gradle \
     maven \
-    python 
+    python \
+    openjdk@11
 
 brew install --cask \
     alfred \
     cheatsheet \
     grammarly \
     rectangle \
-    java \
     gradle \
     maven
 
