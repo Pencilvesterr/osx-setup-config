@@ -67,3 +67,4 @@ function glazy() {
     git push
 }
 
+eval $(thefuck --alias)
