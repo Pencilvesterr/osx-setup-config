@@ -21,12 +21,17 @@ Setup a new OSX with my favourite settings and applications.
     - New finder windows shows my home directory
     - Show home folder in sidebar
 - System preferences:
-    - > Dock and menu bar > battery > show percentage
-    - > Trackpad > Touch to click
+    - Dock and menu bar > battery > show percentage
+    - Trackpad > Touch to click
+    - Keyboard > shortcut > spotlight > disable spotlight shortcut (so you can then use alfred)
+- Iterm2 preferences:
+    - Profiles > Colors > Color presets > smooooth
+    - Profiles > keys > presets > natural text editing (alt arrow jumps over words) 
+    - General > Working Dir > Reuse previous sessions directory
 
 
 # TODO
-- Have so every tenth terminal that opens has a quote from cowsay and fortune
-- Update vscode settings and extensions
-- Setup CMD+Space to launch alfred if possible by code
-- Update iterm2 settings -> colors, keep directory open new shell, keyboard shortcuts
+ - [ ] Have so every tenth terminal that opens has a quote from cowsay and fortune
+ - [ ] Update vscode settings and extensions for export
+ - [ ] Export iTerm2 settings
+

@@ -6,15 +6,7 @@ then
     download_torrent=true
 else
     download_torrent=false
-fi
-
-read -r -p "Download VMWare Fusion? [y/N] " response
-if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
-then
-    download_vmware=true
-else
-    download_vmware=false
-fi
+fi  
 
 ### --- Utilities ---
 brew update
@@ -31,7 +23,9 @@ brew install --cask \
     alfred \
     cheatsheet \
     grammarly \
-    rectangle 
+    rectangle \
+    # Replicate how alt-tab works on windows
+    alt-tab 
     
 ### --- Terminal Customisation ---
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -41,7 +35,8 @@ brew install \
     fortune \
     autojump \
     awscli \
-    thefuck
+    thefuck \
+    micro  # Text editor, until vim
 
 ### --- Applications ---
 brew install --cask \
@@ -59,11 +54,9 @@ brew install --cask \
     whatsapp \
     appcleaner \
     fork \
-    visual-studio-code 
+    visual-studio-code \
+    zoom
 
-if "$download_vmware"; then
-    brew install --cask vmware-fusion
-fi
 if "$download_torrent"; then
     brew install --cask qbittorrent
 fi
@@ -77,11 +70,12 @@ mas lucky onenote
 
 ### --- MISC ---
 # Use this folder for all new projects
-sudo mkdir ~/dev
+mkdir ~/dev
 sudo cp .zshrc ~/.zshrc
 # Show all hideen folders
 defaults write com.apple.Finder AppleShowAllFiles true
-
+# Zsh theme powerlevel10k
+sudo git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 # Delete this directory once setup is complete
 read -r -p "Delete this setup directory[y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
