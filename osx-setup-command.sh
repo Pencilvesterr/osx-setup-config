@@ -25,7 +25,8 @@ brew install --cask \
     grammarly \
     rectangle \
     # Replicate how alt-tab works on windows
-    alt-tab 
+    alt-tab \
+    flux
     
 ### --- Terminal Customisation ---
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
