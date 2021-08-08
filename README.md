@@ -36,7 +36,6 @@ If unsuccessful, use the following Iterm2 preferences:
 
 
 # TODO
- - [ ] Have so every tenth terminal that opens has a quote from cowsay and fortune
  - [ ] Update vscode settings and extensions for export
 
 
