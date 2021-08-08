@@ -55,7 +55,7 @@ alias ....='cd ../../../../'
 # -------------------------------------------------------------------
 alias ga='git add'
 alias gp='git push'
-alias gl='git log'
+alias gl='git log --all --decorate --oneline --graph'
 alias gs='git status'
 alias gd='git diff'
 alias gm='git commit -m'
