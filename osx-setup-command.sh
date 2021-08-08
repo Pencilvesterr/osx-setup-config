@@ -36,7 +36,7 @@ brew install \
     autojump \
     awscli \
     thefuck \
-    micro  # Text editor, until vim
+    micro  # Text editor, until I can use vim
 
 ### --- Applications ---
 brew install --cask \

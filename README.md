@@ -24,7 +24,12 @@ Setup a new OSX with my favourite settings and applications.
     - Dock and menu bar > battery > show percentage
     - Trackpad > Touch to click
     - Keyboard > shortcut > spotlight > disable spotlight shortcut (so you can then use alfred)
-- Iterm2 preferences:
+
+- Restore iTerm2 setting:
+Go to General > Preferences > Load preferences > restore the saved iterm2_settings file.
+
+
+If unsuccessful, use the following Iterm2 preferences:
     - Profiles > Colors > Color presets > smooooth
     - Profiles > keys > presets > natural text editing (alt arrow jumps over words) 
     - General > Working Dir > Reuse previous sessions directory
@@ -33,5 +38,5 @@ Setup a new OSX with my favourite settings and applications.
 # TODO
  - [ ] Have so every tenth terminal that opens has a quote from cowsay and fortune
  - [ ] Update vscode settings and extensions for export
- - [ ] Export iTerm2 settings
+
 
