@@ -56,7 +56,8 @@ brew install --cask \
     appcleaner \
     fork \
     visual-studio-code \
-    zoom
+    zoom \
+    ferdi
 
 if "$download_torrent"; then
     brew install --cask qbittorrent
