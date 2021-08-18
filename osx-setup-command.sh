@@ -50,7 +50,7 @@ brew install --cask \
     pycharm \
     postman \
     spotify \
-    vlc \
+    iiao \
     discord \
     whatsapp \
     appcleaner \
