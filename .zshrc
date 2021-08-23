@@ -27,8 +27,8 @@ source $ZSH/oh-my-zsh.sh
 # export EDITOR="vi"
 
 # Have python from brew point to the correct interpreter 
-alias python=/usr/local/bin/python3 
-alias pip=/usr/local/bin/pip3
+alias python=/opt/homebrew/bin/python3
+alias pip=/opt/homebrew/bin/pip3
 
 # -------------------------------------------------------------------
 # Alias Commands
