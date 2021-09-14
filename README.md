@@ -1,15 +1,15 @@
 # New OSX Setup
-Setup a new OSX with my favourite settings and applications.
+Setup a new OSX machine with my favourite settings and applications.
 
 # Installation
-1. Download this repository somewhere on your machine
-2. Sign in to the App Store within the application (needed for some downloads)
+1. Download this repository 
+2. Sign in to the App Store app (needed for some downloads)
 2. Download brew and follow the prompts
 
 - ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"```
 
 3. In a new terminal, run ```brew doctor``` to make sure everything is installed as it should be
-4. Go to this directory and run ```chmod +x osx-setup-command.sh; ./osx-setup-command.sh```
+4. Go to this directory and run ```chmod +x osx-setup-command.sh && ./osx-setup-command.sh```
 5. Answer a couple questions and wait for everything to download! 
 
 
