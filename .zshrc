@@ -1,4 +1,4 @@
-# Anything printing to console must go before the p10k instant prompt
+3# Anything printing to console must go before the p10k instant prompt
 fortune | cowsay -W 100 -s
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -69,13 +69,35 @@ alias gcl='git clone'
 alias gta='git tag -a -m'
 alias gf='git reflog'
 
+# -------------------------------------------------------------------
+# Custom functions
+# -------------------------------------------------------------------
 # Lazy way to carefree push 
 function glazy() {
-    git add .
-    git commit -a -m "$1"
-    git push
+  git add .
+  git commit -am "$1"
+  git push
 }
 
+# Use to notify when a command has finished, e.g. $ build . && pingme
+# Can use the -s flag to notify without sound
+function pingme() {
+  if [ -z "${1}" ]; then
+    osascript -e "display notification \"Time to get back to it...\" with title \"Command has finished\""
+    say task finished
+  else
+    if [ "${1}" = "-s" ]; then
+      osascript -e "display notification \"${3}\" with title \"${2}\""
+    else  
+      osascript -e "display notification \"${2}\" with title \"${1}\""
+      say task finished
+    fi
+  fi  
+}
+
+# -------------------------------------------------------------------
+# Other
+# -------------------------------------------------------------------
 eval $(thefuck --alias)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
