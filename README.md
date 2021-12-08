@@ -33,6 +33,7 @@ Go to General > Preferences > Load preferences > restore the saved iterm2_settin
         - Profiles > Colors > Color presets > smooooth
         - Profiles > keys > presets > natural text editing (alt arrow jumps over words) 
         - General > Working Dir > Reuse previous sessions directory
+        - Profiles > Sessions > Status bar enabled (bottom) > Configure Status Bar (also turn on rainbow colours)
 
 - Setup Ferdy with dark theme from [this repo]( https://github.com/ducfilan/Dark-mode-Franz-Ferdi)
 
