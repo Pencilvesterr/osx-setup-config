@@ -1,5 +1,6 @@
 #!/bin/bash
 ### --- User selected options ---
+set -e
 read -r -p "Download qBitTorrent? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
 then
