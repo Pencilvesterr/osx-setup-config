@@ -25,41 +25,53 @@ brew install --cask \
     cheatsheet \
     grammarly \
     rectangle \
-    # Replicate how alt-tab works on windows
     alt-tab \
     flux \
-    diffmerge
+    diffmerge \
+    Visual-studio-code
     
 ### --- Terminal Customisation ---
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-brew install --cask iterm2
+read -r -p "Install oh-my-zsh? [y/N] " response
+if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
+then
+   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi  
+
 brew install \
     cowsay \
     fortune \
     autojump \
     awscli \
     thefuck \
-    micro  # Text editor, until I can use vim
+    micro \
+    tree \
+    zsh-syntax-highlighting \
+    zsh-autosuggestions
 
 ### --- Applications ---
 brew install --cask \
-    firefox \
-    google-chrome \
-    tor-browser \
+    iterm2 \
     docker \
     dash \
     intellij-idea \
     pycharm \
     postman \
     spotify \
-    iiao \
-    discord \
+    iina \
     whatsapp \
     appcleaner \
     fork \
     visual-studio-code \
     zoom \
-    ferdi
+    ferdi \
+    firefox \
+    google-chrome
+
+read -r -p "Install Tor? [y/N] " response
+if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
+then
+    brew install --cask tor-browser
+fi  
 
 if "$download_torrent"; then
     brew install --cask qbittorrent
@@ -86,3 +98,4 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
 then
     rm -rf -- "$(pwd -P)" && cd ..
 fi
+echo "All done!"

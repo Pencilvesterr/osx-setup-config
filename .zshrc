@@ -1,4 +1,4 @@
-3# Anything printing to console must go before the p10k instant prompt
+# Anything printing to console must go before the p10k instant prompt
 fortune | cowsay -W 100 -s
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -18,7 +18,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 COMPLETION_WAITING_DOTS="true"
 
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git history-substring-search python pip osx brew)
+plugins=(git history-substring-search python pip macos brew)
 
 # Load the good stuff.
 source $ZSH/oh-my-zsh.sh
@@ -102,5 +102,3 @@ eval $(thefuck --alias)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
