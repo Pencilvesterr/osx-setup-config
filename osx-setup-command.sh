@@ -92,6 +92,14 @@ sudo cp .zshrc ~/.zshrc
 defaults write com.apple.Finder AppleShowAllFiles true
 # Zsh theme powerlevel10k
 sudo git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+#Set Diffmerge to be default merge conflict tool when you `git mergetool`
+git config --global diff.tool diffmerge
+git config --global difftool.diffmerge.cmd 'diffmerge "$LOCAL" "$REMOTE"'
+git config --global merge.tool diffmerge
+git config --global mergetool.diffmerge.cmd 'diffmerge --merge --result="$MERGED" "$LOCAL" "$(if test -f "$BASE"; then echo "$BASE"; else echo "$LOCAL"; fi)" "$REMOTE"'
+git config --global mergetool.diffmerge.trustExitCode true
+git config --global mergetool.keepBackup false
+
 # Delete this directory once setup is complete
 read -r -p "Delete this setup directory[y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
