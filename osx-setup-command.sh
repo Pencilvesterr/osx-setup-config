@@ -3,8 +3,14 @@
 read -r -p "Install terminal setup? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
 then
-   
+    ### --- Terminal Setup ---
+    ZDOTDIR=~/.config/zsh
+    git clone https://github.com/Pencilvesterr/zdotdir $ZDOTDIR
+    # symlink .zshenv
+    [[ -f ~/.zshenv ]] && mv -f ~/.zshenv ~/.zshenv.bak
+    ln -s $ZDOTDIR/.zshenv ~/.zshenv
 fi  
+
 ### --- User selected options ---
 set -e
 brew update
@@ -12,20 +18,11 @@ brew update
 brew bundle 
 echo "Finished installing applications"
 
-### --- Terminal Setup ---
-ZDOTDIR=~/.config/zsh
-git clone https://github.com/Pencilvesterr/zdotdir $ZDOTDIR
-# symlink .zshenv
-[[ -f ~/.zshenv ]] && mv -f ~/.zshenv ~/.zshenv.bak
-ln -s $ZDOTDIR/.zshenv ~/.zshenv
-
-
 ### --- MISC ---
 # Use this folder for all new projects
 mkdir -p ~/dev || true
 # Show all hidden folders
 defaults write com.apple.Finder AppleShowAllFiles true
-
 
 
 # The below should all be done with https://github.com/Pencilvesterr/zdotdir 
