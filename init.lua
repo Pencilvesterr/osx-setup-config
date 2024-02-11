@@ -1,3 +1,5 @@
+-- Config for Hammerspoon to work with LG TV 
+
 local tv_identifier = "LG TV"
 local mac_address = "80:5B:65:7E:43:D6"
 local tv_connected = (hs.screen.find(tv_identifier) ~= nil)
