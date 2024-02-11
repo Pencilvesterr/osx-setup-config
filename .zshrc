@@ -1,3 +1,6 @@
+# TODO: This is probably getting replaced by my personal zdotdir repo but haven't done it yet
+
+
 # Anything printing to console must go before the p10k instant prompt
 fortune | cowsay -W 100 -s
 
