@@ -4,8 +4,6 @@ brew "cowsay"
 brew "fortune"
 brew "thefuck"
 brew "tree"
-brew "zsh-syntax-highlighting"
-brew "zsh-autosuggestions"
 brew "mas-cli/tap/mas" # Required for mac app install from CLI
 
 ### --- Applications ---
@@ -38,6 +36,7 @@ mas "bitwarden", id: 1352778147 # Need to use app store for web auto-comp functi
 cask "ferdium" # TBD if i'm still using this in the future...
 cask "betterdisplay" # Only if using LG 42
 cask "hammerspoon" # Only if using LG 42
+brew "wakeonlan" # Only if using LG 42 and hammerspoon
 cask "ogi-options-plus" # Only if using logitech mouse
 
 

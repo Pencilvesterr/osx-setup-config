@@ -16,7 +16,7 @@ watcher = hs.caffeinate.watcher.new(function(eventType)
 
   if (eventType == hs.caffeinate.watcher.screensDidUnlock) and hs.screen.find(tv_identifier) ~= nil then
     if debug then print("TV was turned on.") end
-    hs.execute("/usr/local/bin/wakeonlan "..mac_address)
+    hs.execute("/opt/homebrew/bin/wakeonlan "..mac_address)
   end
 end)
 watcher:start()
