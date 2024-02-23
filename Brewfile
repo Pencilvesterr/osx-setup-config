@@ -5,6 +5,7 @@ brew "fortune"
 brew "thefuck"
 brew "tree"
 brew "mas-cli/tap/mas" # Required for mac app install from CLI
+brew "speedtest-cli"
 
 ### --- Applications ---
 cask "iterm2" 
