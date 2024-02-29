@@ -21,6 +21,7 @@ Setup a new OSX machine with my favourite settings and applications.
     - Make sure that search only looks in the current directory
     - New finder windows shows my home directory
     - Show home folder in sidebar
+    - Always show hidden files by running in terminal: defaults write com.apple.Finder AppleShowAllFiles true
 - In Rectangle, import my custom config from this directory
 - If using LG OLED 42, copy init.lua and use it in hammerspoons config for getting TV to turn on
 
