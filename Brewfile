@@ -6,6 +6,7 @@ brew "thefuck"
 brew "tree"
 brew "mas-cli/tap/mas" # Required for mac app install from CLI
 brew "speedtest-cli"
+brew "zoxide" 
 
 ### --- Applications ---
 cask "iterm2" 
